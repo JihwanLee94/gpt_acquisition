@@ -1,0 +1,349 @@
+prompt	epoch	decoding	generated
+Where did he go yesterday? 	1	greedy	"Where did he go yesterday? 
+ he's gonna go to the other one of the other one of the other one of the one of the one of the one of the one of the one.
+ one.
+ one one one one one one one one one one one one one"
+Where did he go yesterday? 	1	entmax	"Where did he go yesterday?  you go to school and then you're going to go to the house and we can get a minute? 
+ what do we have a big one? 
+ oh   oh. 
+ okay. 
+ what? 
+ oh, okay, we're going to"
+Where did he go yesterday? 	2	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what is this?
+ what more can you tell me?
+ what more can you tell me?
+ what more can you tell me?
+ what more can you tell me?
+ what more can"
+Where did he go yesterday? 	2	entmax	"Where did he go yesterday? 
+ oh okay.
+ he was a good one.
+ he was a big one.
+ okay.
+ I think that's a little bit of it.
+ that's a big picture of the little boy.
+ I don't know what I"
+Where did he go yesterday? 	3	greedy	"Where did he go yesterday?  what did he do?
+ what did he do?
+ what did he do?
+ what did he do?
+ what did he do?
+ what did he do?
+ what did he do?
+ what did he do?
+ what did"
+Where did he go yesterday? 	3	entmax	"Where did he go yesterday?  okay?
+ yeah.
+ oh yeah?
+ what's that?
+  okay.
+ you don't wanna go on the chair?
+  what's that?
+ what's that?
+ a girl.
+  what's this?
+"
+Where did he go yesterday? 	4	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what's this?
+ what more can you tell me?
+ mm.
+ what more can you tell me?
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+"
+Where did he go yesterday? 	4	entmax	"Where did he go yesterday? 
+<|endoftext|>
+okay.
+ okay.
+ okay.
+ okay.
+ what is this?
+ what more can you tell me?
+ zorg doesn't know much about this one.
+ can you help him out?
+ okay.
+"
+Where did he go yesterday? 	5	greedy	"Where did he go yesterday?  did he go to the store?
+ did he go to the store?
+ did he go to the store?
+ did he go to the store?
+ did he go to the store?
+ did he go to the store?
+ did he"
+Where did he go yesterday? 	5	entmax	"Where did he go yesterday? 
+ he did?
+ oh yeah he's going to have a lot of things to do.
+ what do you think about that?
+ I don't think that's a boy.
+ do you know what this is?
+ what's he wearing"
+Where did he go yesterday? 	6	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm."
+Where did he go yesterday? 	6	entmax	"Where did he go yesterday?  no.
+ oh okay.
+ what's this?
+ a lobster.
+ what's this?
+ what's that?
+ a lion?
+ and what's he do with a turtle?
+ and what's he do?
+ yeah.
+"
+Where did he go yesterday? 	7	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm."
+Where did he go yesterday? 	7	entmax	"Where did he go yesterday? 
+ I didn't see any fish in the fish.
+ oh.
+ so you didn't see any fish?
+ what did we see?
+ you don't see any fish in the fish.
+ do you remember what that was?
+ do"
+Where did he go yesterday? 	8	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm.
+ mm."
+Where did he go yesterday? 	8	entmax	"Where did he go yesterday?  did he go on an airplane?
+ yeah.
+ yeah?
+ what color is he?
+ is he blue or black?
+ what color's he's got?
+ what color's his eye?
+ is it yellow?
+ no.
+"
+Where did he go yesterday? 	9	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ zorg doesn't know much about this one.
+ can you help him out?
+ mm.
+ what is this?
+ what more can you"
+Where did he go yesterday? 	9	entmax	"Where did he go yesterday?  yeah.
+ I think it's a puppy.
+ yeah?
+ yeah.
+ and what's this?
+ what more can you tell me?
+ oh, yeah.
+ okay.
+ well thank you so much for doing that with me."
+Where did he go yesterday? 	10	greedy	"Where did he go yesterday?  he's a big guy.
+ he's a big guy.
+ he's a big guy.
+ he's a big guy.
+ he's a big guy.
+ he's a big guy.
+ he's a big guy.
+ he"
+Where did he go yesterday? 	10	entmax	"Where did he go yesterday?  he went to sleep.
+ mm.
+ I don't think so.
+ okay.
+ and what's this?
+ what more can you tell me?
+ mm, I think he's got a lot of things in his mouth.
+ he"
+There is a wug. There are two 	1	greedy	"There is a wug. There are two.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ um, it"
+There is a wug. There are two 	1	entmax	"There is a wug. There are two  you're gonna get the house. 
+ yeah, okay.
+ and we'll get it up on the way up there. 
+ and we can go in the door? 
+ I don't you. 
+ we'll go out of the table? 
+"
+There is a wug. There are two 	2	greedy	"There is a wug. There are two .
+ and what's this?
+ what's this?
+ what's this?
+ what's this?
+ what's this?
+ what's this?
+ what's this?
+ what's this?
+ what's this?
+ what's"
+There is a wug. There are two 	2	entmax	"There is a wug. There are two  a b d e.
+ you wanna say hi?
+ you're a big boy?
+ a big one?
+ that's a big one.
+ that's a little one.
+ yeah   it's a big one.
+ yeah.
+"
+There is a wug. There are two 	3	greedy	There is a wug. There are two  three four four four five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five
+There is a wug. There are two 	3	entmax	"There is a wug. There are two  two two two two four five six seven eight six four.
+ what is this?
+ you don't have any of those at home.
+ oh yeah that's not for me.
+ I'm sorry I'm not gonna have one more minutes for"
+There is a wug. There are two 	4	greedy	"There is a wug. There are two  two three four five five five five five five five five.
+ okay.
+ what is this?
+ what more can you tell me?
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ mm"
+There is a wug. There are two 	4	entmax	"There is a wug. There are two  three three.
+ and um, a little bit of a lot of kids and they're really pretty good.
+ mm-hm.
+ um, um they're good to have to go to sleep.
+ um they have a good job and then"
+There is a wug. There are two 	5	greedy	"There is a wug. There are two  three.
+ mm-hm.
+ um, I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+ I don't know"
+There is a wug. There are two 	5	entmax	"There is a wug. There are two  four.
+ I don't know what this is.
+ this is an orange.
+ what is this?
+ what more can you tell me?
+ um, looks like a, a green tail.
+ mm-hm.
+ and it's"
+There is a wug. There are two 	6	greedy	"There is a wug. There are two  three.
+ and a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a"
+There is a wug. There are two 	6	entmax	"There is a wug. There are two  three.
+ what is this?
+ this is a crocodile.
+ and it's a female.
+ and he's a mallard horse.
+ and he's a big dog.
+ he's got big eyes.
+ mm-hm.
+ he"
+There is a wug. There are two 	7	greedy	"There is a wug. There are two  two.
+ and a little bit more.
+ and a little bit more.
+ um, I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+ I"
+There is a wug. There are two 	7	entmax	"There is a wug. There are two  three four five.
+ uh huh.
+ and that's a number two.
+ uh huh.
+ what more can you tell me?
+ uh huh.
+ um, I don't know if you don't know what they're for.
+"
+There is a wug. There are two 	8	greedy	"There is a wug. There are two  of them are like a w-d-aid.
+ and it's a little bit of a little bit of a little bit of a little bit of a little bit of a.
+ mm-hm.
+ um, I don't know."
+There is a wug. There are two 	8	entmax	"There is a wug. There are two . 
+ yeah. 
+ what's this one?
+ yeah.
+ it's a a parrot.
+ mm-hm. 
+ what is that?
+ what do you think is that?
+ mm-hm.
+ and it looks like it's"
+There is a wug. There are two 	9	greedy	"There is a wug. There are two  three.
+ and a half and a half and a half.
+ and a half.
+ and a half half.
+ and a half half.
+ and a half half.
+ and a half half.
+ and a half half half.
+"
+There is a wug. There are two 	9	entmax	"There is a wug. There are two  different colors on it.
+ mm-hm.
+ and the green one on the side of the side of the side of the side.
+ and it has a white side on it.
+ mm-hm.
+ and it has a red bottom"
+There is a wug. There are two 	10	greedy	"There is a wug. There are two  three legs.
+ and a two legs.
+ and a two legs.
+ and a two legs.
+ and a two legs.
+ and a two legs.
+ and a two legs.
+ and a two legs.
+ and a two legs"
+There is a wug. There are two 	10	entmax	"There is a wug. There are two.
+ what else can you tell me?
+ mm-hm.
+ mm-hm.
+ oh, okay.
+ oh.
+ okay.
+ what is this?
+ this looks like a police officer.
+ mm-hm.
+ she"
