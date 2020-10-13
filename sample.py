@@ -56,53 +56,59 @@ def greedy(input_ids, tokenizer, model, prompt, epoch=None, max_length=50):
     for _ in range(max_length):
 
         prediction_scores = model(new_input_ids)
-        print(tokenizer.decode(new_input_ids[0], skip_special_tokens=False))
+        # print(tokenizer.decode(new_input_ids[0], skip_special_tokens=False))
         top_k, next_id = get_top_k_prob(new_input_ids, prediction_scores, tokenizer, k=5)
         # print("topk:", top_k[0][0], tokenizer.encode(top_k[0][0], return_tensors='pt'))
-        # print(new_input_ids.shape)
-        # print(next_id.reshape((1,1)))
         new_input_ids = torch.cat((new_input_ids, next_id.reshape((1,1))), 1)
         # print("new input ids: ", new_input_ids)
         # get_top_k_sim(top_k)
-        # new_input_ids = tf.concat([new_input_ids, tf.reshape(tf.math.argmax(prediction_scores[0], axis=2, output_type=tf.dtypes.int32)[0][-1],[1,1])], axis=1)
-        # new_input_ids = torch.conca
 
         log.append(top_k[0])
 
-    print(tokenizer.decode(new_input_ids[0], skip_special_tokens=False))
-    draw_prob_graph(log, filename=prompt, title=f'GPT greedy epoch{epoch}')
+    # print(tokenizer.decode(new_input_ids[0], skip_special_tokens=False))
     output_sent = tokenizer.decode(new_input_ids[0], skip_special_tokens=False)
+    draw_prob_graph(log, text=output_sent, filename=prompt, title=f'GPT greedy epoch{epoch}')
+
     return output_sent
 
-def sample_default(input_ids, tokenizer, model, max_length=50):
+def sample_default(input_ids, tokenizer, model, prompt, epoch=None, max_length=50):
     # print(input_ids)
     log = []
     new_input_ids = deepcopy(input_ids)
     for _ in range(max_length):
 
         prediction_scores = model(new_input_ids)
-        print(tokenizer.decode(new_input_ids[0], skip_special_tokens=False))
-        # top_k = get_top_k_prob(new_input_ids, prediction_scores, tokenizer, k=5)
-        # get_top_k_sim(top_k)
-        # print(prediction_scores[0][0][-1])
-        prediction_scores_softmax = tf.nn.softmax(prediction_scores[0][0][-1])/1.0001
-        # print(sum(prediction_scores_softmax))
-        next_token_id = tf.convert_to_tensor(np.argmax(np.random.multinomial(1, prediction_scores_softmax, 1)), dtype=tf.int32)
-        # next_token_id = tfp.distributions.Multinomial(total_count=[1], logits=prediction_scores[0][0][-1])
-        # print(len(prediction_scores))
-        new_input_ids = tf.concat([new_input_ids, tf.reshape(next_token_id,[1,1])], axis=1)
-        # print(new_input_ids)
+        prediction_scores_softmax = torch.nn.Softmax()(prediction_scores[0][0][-1])/1.0001
+        prediction_scores_softmax = prediction_scores_softmax.detach().numpy()
+        next_token_id = torch.from_numpy(np.array(np.argmax(np.random.multinomial(1, prediction_scores_softmax, 1)), dtype=np.int64))
+        next_token_id = torch.reshape(next_token_id, [1,1])
+        new_input_ids = torch.cat((new_input_ids, next_token_id), 1)
 
         next_token = tokenizer.decode([next_token_id], skip_special_tokens=False)
         next_token_prob = prediction_scores_softmax[next_token_id]
 
         log.append((next_token, next_token_prob))
 
-    print(tokenizer.decode(new_input_ids[0], skip_special_tokens=False))
-    draw_prob_graph(log, filename=prompt, title='GPT default sampling')
-    # greedy_output = model.generate(input_ids, max_length=max_length)
     output_sent = tokenizer.decode(new_input_ids[0], skip_special_tokens=False)
+    draw_prob_graph(log, text=output_sent, filename=prompt, title=f'GPT default epoch{epoch}')
+
     return output_sent
+
+def cal_sent_prob(input_ids, tokenizer, model, sentence, epoch):
+
+    prob = 1.0
+    for i,idx in enumerate(input_ids[0]):
+        temp_input_ids = deepcopy(input_ids[0][:i+1].reshape((1,i+1)))
+        # print(i, temp_input_ids)
+        prediction_scores = model(temp_input_ids)
+        prediction_scores = torch.nn.Softmax()(prediction_scores[0][0][-1])
+        if i < len(input_ids[0])-1:
+            next_token_prob = prediction_scores[input_ids[0][i+1]]
+            prob *= next_token_prob
+
+    return prob ** (1/len(input_ids[0]))
+
+
 
 def top_s(input_ids, tokenizer, model, max_length=50):
 
@@ -123,7 +129,7 @@ def top_s(input_ids, tokenizer, model, max_length=50):
     return output_sent
 
 def get_top_k_prob(input_ids, prediction_scores, tokenizer, k=50, temperature=1):
-    print('\nCurrent Sentence:\t',tokenizer.decode(input_ids[0], skip_special_tokens=False))
+    # print('\nCurrent Sentence:\t',tokenizer.decode(input_ids[0], skip_special_tokens=False))
     prediction_scores = prediction_scores[0][0][-1]
     prediction_scores = torch.nn.Softmax()(prediction_scores/temperature)
     top_k = torch.topk(prediction_scores, k=k, sorted=True)
@@ -131,8 +137,8 @@ def get_top_k_prob(input_ids, prediction_scores, tokenizer, k=50, temperature=1)
     top_k_prob = top_k[0].detach().numpy()
     top_k_decoded = [tokenizer.decode([top_k[1][j]], skip_special_tokens=False) for j in range(k)]
     top_k = list(zip(top_k_decoded, top_k_prob))
-    print('Candidates:')
-    pprint(top_k)
+    # print('Candidates:')
+    # pprint(top_k)
     # print(prediction_scores)
     return top_k, top_1_id
 
@@ -183,7 +189,6 @@ def cal_cos_sim(word, vocab):
 
 
     return cossim.numpy()
-
 
 
 if __name__ == "__main__" :

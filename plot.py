@@ -32,3 +32,18 @@ def draw_prob_graph(log, text=None, filename=None, title=None):
     plt.close()
 
     return
+
+
+def draw_sent_prob(sents, logs, filename=None, title=None):
+
+    fig, ax = plt.subplots()
+    epoch_len = len(logs[0])
+    for i,s in enumerate(sents):
+        ax.plot(range(1,epoch_len+1), logs[i], label=s)
+
+    ax.legend()
+    ax.set_xlabel('epoch')
+    ax.set_ylabel('sentence probability')
+    plt.savefig(f'./plot/sentence_prob_{filename}.png', dpi=300)
+    plt.close()
+    return

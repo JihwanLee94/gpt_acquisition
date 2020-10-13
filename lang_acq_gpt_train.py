@@ -74,7 +74,7 @@ def train(epoch):
         num_train_epochs=epoch,
         per_device_train_batch_size=32,
         save_steps=1515,
-        save_total_limit=epoch,
+        save_total_limit=1,
     )
     print('training args set')
 
@@ -95,7 +95,7 @@ def train(epoch):
 
 def main():
 
-    for i in range(1,11):
+    for i in range(11,21):
         print(f'{i} epoch training begins...')
         if not os.path.exists(f'./trained/checkpoints_{i}'):
             os.system(f'mkdir trained/checkpoints_{i}')
