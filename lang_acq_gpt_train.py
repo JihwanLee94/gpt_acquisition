@@ -3,7 +3,7 @@
 from tokenizers import ByteLevelBPETokenizer
 from transformers import GPT2Tokenizer, GPT2Config, GPT2LMHeadModel, TextDataset, DataCollatorForLanguageModeling, TrainingArguments, Trainer, DataCollator
 import json
-from config import vocab_size, seq_len
+from config import vocab_size, seq_len, corpus, corpus_path, max_epoch
 import os
 import torch
 import numpy as np
@@ -17,7 +17,7 @@ def tokenize(filename):
     tokenizer = ByteLevelBPETokenizer()
     tokenizer.train(files=filename, vocab_size=vocab_size, min_frequency=2, special_tokens=['<|endoftext|>'])
         # '<bos>', '<eos>', '<unk>', '<pad>', '<mask>'])
-    tokenizer.save('childes')
+    tokenizer.save(corpus)
 
     return tokenizer
 
@@ -50,9 +50,9 @@ def load_dataset(path, tokenizer):
 
 def train(epoch):
 
-    # tokenize('child_directed.txt')
+    tokenize(corpus_path)
 
-    tokenizer = load_gpt_tokenizer('childes')
+    tokenizer = load_gpt_tokenizer(corpus)
     # print(tokenizer.tokenize(' Hi there <|endoftext|>'))
 
 
@@ -66,15 +66,15 @@ def train(epoch):
 
     print(f'{model.num_parameters()} parameters')
 
-    dataset, data_collator = load_dataset(path='./child_directed.txt', tokenizer=tokenizer)
+    dataset, data_collator = load_dataset(path=corpus_path, tokenizer=tokenizer)
 
     training_args = TrainingArguments(
-        output_dir=f'./trained/checkpoints_{epoch}',
+        output_dir=f'./{corpus}/trained/checkpoints_{epoch}',
         overwrite_output_dir=True,
         num_train_epochs=epoch,
         per_device_train_batch_size=32,
-        save_steps=1515,
-        save_total_limit=1,
+        save_steps=1575,
+        save_total_limit=epoch,
     )
     print('training args set')
 
@@ -90,15 +90,15 @@ def train(epoch):
 
     trainer.train()
 
-    trainer.save_model(f"./trained/checkpoints_{epoch}")
+    trainer.save_model(f"./{corpus}/trained/checkpoints_{epoch}")
 
 
 def main():
 
-    for i in range(11,21):
+    for i in range(max_epoch, max_epoch+1):
         print(f'{i} epoch training begins...')
-        if not os.path.exists(f'./trained/checkpoints_{i}'):
-            os.system(f'mkdir trained/checkpoints_{i}')
+        if not os.path.exists(f'./{corpus}/trained/checkpoints_{i}'):
+            os.system(f'mkdir {corpus}/trained/checkpoints_{i}')
         train(epoch=i)
 
     return

@@ -9,12 +9,16 @@ Where did he go yesterday? 	1	greedy	"Where did he go yesterday?
  he's gonna go to the other one of the other one of the other one of the one of the one of the one of the one of the one.
  one.
  one one one one one one one one one one one one one"
-Where did he go yesterday? 	1	entmax	"Where did he go yesterday?  you want to me to do? 
- you're not a big girl. 
- do you think it's a lot of things for you have a big baby? 
- I don't think that's a big baby? 
- yeah. 
- do you like"
+Where did he go yesterday? 	1	entmax	"Where did he go yesterday? . 
+ he was still hungry. 
+ oh you know what this one? 
+ what else did you say? 
+ what's that? 
+ what is this? 
+ oh what? 
+ what is it? 
+ oh what is this? 
+ oh."
 Where did he go yesterday? 	2	default	"Where did he go yesterday?  he was going now ⌈ nest and_Gitkie ⌋.
  and he saw that like this stuff was like a fenceed to him about disappearate you thought it was called a  pair of wooden himself and about other Justin does he play with the"
 Where did he go yesterday? 	2	greedy	"Where did he go yesterday? 
@@ -28,14 +32,12 @@ what is this?
  what more can"
 Where did he go yesterday? 	2	entmax	"Where did he go yesterday? 
 <|endoftext|>
-oh  what did you tell me about?
- yeah, I didn't know what you did.
- yeah.
- did you tell him what happened?
- oh.
- you did.
- you did.
- what did"
+okay.
+ you know what that is.
+ you don't think of the boy is.
+ you think the baby is the baby's house?
+ I think he's got a little girl in there?
+ is he"
 Where did he go yesterday? 	3	default	"Where did he go yesterday?  I guess that kind of better.
  it's just take it out.
  yeah.
@@ -52,15 +54,16 @@ Where did he go yesterday? 	3	greedy	"Where did he go yesterday?  what did he do
  what did he do?
  what did he do?
  what did"
-Where did he go yesterday? 	3	entmax	"Where did he go yesterday?  no.
- you're going to go back to sleep with the store?
- what?
- oh!
- what do you think that's about that?
- yeah.
+Where did he go yesterday? 	3	entmax	"Where did he go yesterday?  you're doing it.
  what is it?
- do you think he's got a hat?
-"
+ a bird.
+ what is that?
+ what is this?
+ a dog.
+ what is that?
+ what more can you tell me?
+ what is that?
+ what more can"
 Where did he go yesterday? 	4	default	"Where did he go yesterday? 
  oh I remember the difference that towers.
  that's okay.
@@ -84,14 +87,19 @@ what's this?
  mm.
 "
 Where did he go yesterday? 	4	entmax	"Where did he go yesterday? 
- oh, he was so big, but what was that?
- what kind of pie is it?
- yeah.
- it was a parrot?
- a snake.
- it's a dolphin.
- it was a skunk.
- I don't"
+ oh you're right.
+ oh yeah.
+ okay.
+ you're welcome.
+ okay.
+<|endoftext|>
+okay.
+ okay.
+ okay.
+ what is this?
+ a parrot.
+ mm-hm.
+ mm"
 Where did he go yesterday? 	5	default	"Where did he go yesterday?  did he bite you?
  it looks like an orange noodle but it's probably salt.
  in the bowl I bet a nickel.
@@ -105,12 +113,13 @@ Where did he go yesterday? 	5	greedy	"Where did he go yesterday?  did he go to t
  did he go to the store?
  did he go to the store?
  did he"
-Where did he go yesterday? 	5	entmax	"Where did he go yesterday?  what did you say about that?
-  you remember what did we do?
-  you don't remember what we went in there?
- what did we do at the park?
- you remember what we were doing in the water?
- yeah"
+Where did he go yesterday? 	5	entmax	"Where did he go yesterday?  did you see a snake?
+ you didn't see the dolphin.
+ do you see any fish in the zoo?
+ do you see a little snake?
+ did you see the lion?
+ did you see a snake in the zoo?
+"
 Where did he go yesterday? 	6	default	"Where did he go yesterday?  did you call a girl why?
  oh I have a dad.
  he's having a hat and a sleaize Chantilly and I've only got the hat on when you saw him what?
@@ -131,12 +140,14 @@ what is this?
  mm.
  mm.
  mm."
-Where did he go yesterday? 	6	entmax	"Where did he go yesterday?  he's got his tongue and he's got a little tongue.
- I don't know what that is.
- what do you think this is?
- I don't think it's a pretzel.
- do you know what this is?
- what"
+Where did he go yesterday? 	6	entmax	"Where did he go yesterday?  he went to see you?
+ he was looking for some reason.
+ oh.
+  hi!
+ you want to see the book?
+ you're right.
+ what's he doing?
+ oh he's got a lot of water on"
 Where did he go yesterday? 	7	default	"Where did he go yesterday? 
  sure.
  much is there anything else you'd like to tell me?
@@ -161,15 +172,14 @@ what is this?
  mm.
  mm."
 Where did he go yesterday? 	7	entmax	"Where did he go yesterday? 
- he didn't like that one.
-  hi!
- hi!
- oh!
- I'm gonna go back and play with this one.
- what is this?
- oh my!
- he's not gonna play with that?
- you"
+ what was the other one that you liked about the last time?
+ yeah?
+ oh yeah.
+ what's the last one?
+ what is the first one?
+ what's the last one?
+ the first one?
+ the first"
 Where did he go yesterday? 	8	default	"Where did he go yesterday?  because he got little nail on his peel.
                        ⌈mm-hm⌉.
  and his horse's very soft.
@@ -192,15 +202,13 @@ what is this?
  mm.
  mm."
 Where did he go yesterday? 	8	entmax	"Where did he go yesterday? 
- he did?
- he did?
- oh.
- oh he's a silly guy.
- what is that?
- do you think that is a doctor?
+ he's going to get the ball.
+ I think that's a good thing to go in the front.
+ is it?
  yeah.
- is that a doctor or a doctor?
- what does she look"
+ do you want to look at it again?
+ you can't see it?
+ it's"
 Where did he go yesterday? 	9	default	"Where did he go yesterday? 
  oh!
  are you sure?
@@ -219,13 +227,17 @@ what is this?
  what is this?
  what more can you"
 Where did he go yesterday? 	9	entmax	"Where did he go yesterday?  yeah?
- oh he's going to go to the store and get the grocery store and buy it?
+ did you have fun?
+ yeah.
+ yeah?
+ you don't want to?
  okay.
- and what is this?
- it's a pumpkin.
- what's on the pumpkin?
- it's a pumpkin.
-"
+ oh you did?
+ oh okay.
+ what do you think?
+ oh.
+ you're silly.
+ I'm"
 Where did he go yesterday? 	10	default	"Where did he go yesterday? rog driver.
  Horgster Joseph see.
  chop down?
@@ -242,28 +254,295 @@ Where did he go yesterday? 	10	greedy	"Where did he go yesterday?  he's a big gu
  he's a big guy.
  he's a big guy.
  he"
-Where did he go yesterday? 	10	entmax	"Where did he go yesterday? 
- what's the name of the story?
- oh you're gonna get it for you.
-  oh my goodness.
- you know what?
- you're a witch.
- oh okay.
- what do you think it's?
- a"
-There is a wug. There are two 	1	default	"There is a wug. There are two  not your name.
- this one did.
- I am|>
- how?
- oh.
- that's  mm-hm.
- “ Elana.
- okay.
- hm.
- mm-hm!
- anything else?
- carrots.
+Where did he go yesterday? 	10	entmax	"Where did he go yesterday?  did he have a good time?
+ yeah?
+ what is that?
+ a butterfly?
+ mm-hm.
+ do you like it?
+ you don't like it?
+ do you?
+  you think that's a good idea"
+Where did he go yesterday? 	11	default	"Where did he go yesterday? 
+<|endoftext|>
+yes xxx.
+ what's her name Poo has in her requancer?
+ I think Lartado?
+ sposta be a Chorcake caterpillar about farms.
+  what's the matter?
+ he's picking"
+Where did he go yesterday? 	11	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ zorg doesn't know much about this one.
+ can you help him out?
+ mm.
+ what is this?
+ what more can you"
+Where did he go yesterday? 	11	entmax	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ zorg doesn't know much about this one.
+ can you help him out?
+ mm.
+ what is this?
+ what more can you tell me?"
+Where did he go yesterday? 	12	default	"Where did he go yesterday? 
+<|endoftext|>
+where's your xxx this no?
+ why don't you left overthere xxx.
+ guess xxx .
+ we've already been inlord.
+ xxx.
+ I've already hicmit those people xxx.
 "
+Where did he go yesterday? 	12	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ zorg doesn't know much about this one.
+ can you help him out?
+ what is this?
+ what more can you tell me?
+ zorg doesn"
+Where did he go yesterday? 	12	entmax	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ mm.
+ mm.
+ mm.
+ mm-hm.
+ what more can you tell me?
+ mm-hm.
+ what else can you tell me?
+ mm-hm.
+"
+Where did he go yesterday? 	13	default	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ this is a lion.
+ oh, but ⌈ first lady beginning to the picture⌉.
+ ⌊um⌋ is the giant telling the turtle what is she using?
+ uh-huh.
+ what is"
+Where did he go yesterday? 	13	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ zorg doesn't know much about this one.
+ can you help him out?
+ mm.
+ what is this?
+ what more can you"
+Where did he go yesterday? 	13	entmax	"Where did he go yesterday? 
+<|endoftext|>
+what's this?
+ a pig.
+ mm-hm.
+ looks like it might be a pig.
+ mm-hm.
+ it looks like it might be a pig.
+ what more can you tell me?"
+Where did he go yesterday? 	14	default	"Where did he go yesterday? 
+ did Daddy catch any foods?
+ maybe think so.
+ what flavor or cones do you know?
+ grandma probably went to the store and looked at the store.
+ remember how she found this stuff?
+ and she found a ice cream cone"
+Where did he go yesterday? 	14	greedy	"Where did he go yesterday? 
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?"
+Where did he go yesterday? 	14	entmax	"Where did he go yesterday? 
+ did he go to the zoo or did you see him?
+ oh he went to see him.
+ what did you do at the zoo?
+ you saw a turtle.
+ did you like that?
+ did you like it?
+ you"
+Where did he go yesterday? 	15	default	"Where did he go yesterday? 
+ and did he come home?
+ did he come home too?
+ did anything else happen to him?
+ then what happened to your arm?
+ huh?
+ maybe it's you something that happened to him.
+ sad boy.
+ remember"
+Where did he go yesterday? 	15	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ zorg doesn't know much about this one.
+ can you help him out?
+ what is this?
+ what more can you tell me?"
+Where did he go yesterday? 	15	entmax	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ mm-hm.
+ mm-hm.
+ mm-hm.
+ what more can you tell me?
+ zorg doesn't know much about this one.
+ can you help him out?
+"
+Where did he go yesterday? 	16	default	"Where did he go yesterday?  that's a nice book.
+ you know what you might wanna eat?
+ what's that a judge.
+ doing a special picture?
+ I don't know, what that picture is.
+ what is he?
+ that's something he has"
+Where did he go yesterday? 	16	greedy	"Where did he go yesterday?  oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh.
+ oh."
+Where did he go yesterday? 	16	entmax	"Where did he go yesterday? 
+ did he go in his house?
+ no?
+ what is he doing?
+ is he going to drive?
+ you don't think he can drive?
+ I don't know.
+ is he a king or a king?
+ no"
+Where did he go yesterday? 	17	default	"Where did he go yesterday?  and what did he do while he was?
+ did he jump?
+ did he touch himself or did he feel exciting?
+ did we see anyone dried out?
+ with some white stuff on the cob?
+ what did we?
+ pass me"
+Where did he go yesterday? 	17	greedy	"Where did he go yesterday?  he did?
+ did he go to the doctor?
+ did he go to the doctor?
+ what did he do?
+ did he go to the doctor?
+ did he go to the doctor?
+ what did he do?
+ did he"
+Where did he go yesterday? 	17	entmax	"Where did he go yesterday?  did he take a nap?
+ what do you think happened to his leg?
+ do you think he'll come home and get some food?
+ you don't think so?
+ what do you think he'd like to do?
+  hi"
+Where did he go yesterday? 	18	default	"Where did he go yesterday?  okay.
+ yeah that's where he jump over the water.
+ that's what that is.
+ oh.
+ well maybe he's jumping on a duck.
+ he says “byebye duck”.
+ hi.
+  so I will fly pretty"
+Where did he go yesterday? 	18	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ zorg doesn't know much about this one.
+ can you help him out?
+ mm.
+ what is this?
+ what more can you"
+Where did he go yesterday? 	18	entmax	"Where did he go yesterday? 
+<|endoftext|>
+what do you think of that?
+ a muffin.
+ mm-hm.
+ you don't eat a muffin?
+ what do you think that is?
+ yeah?
+ do you know what kind of muffin it is"
+Where did he go yesterday? 	19	default	"Where did he go yesterday?  yep.
+ we don't know I think.
+ we've been looking at the suggestions all the time.
+ wow I was thinking maybe they're at a party yet.
+ um but I don't know.
+ how do you think the"
+Where did he go yesterday? 	19	greedy	"Where did he go yesterday? 
+<|endoftext|>
+what is this?
+ what more can you tell me?
+ mm.
+ zorg doesn't know much about this one.
+ can you help him out?
+ what is this?
+ what more can you tell me?"
+Where did he go yesterday? 	19	entmax	"Where did he go yesterday? 
+ yeah he did?
+ did you like that picture?
+ what is that?
+ yeah.
+ what's he doing?
+  hi!
+ I think I'll cover this one back up.
+ yeah?
+ okay.
+ oh okay"
+Where did he go yesterday? 	20	default	"Where did he go yesterday?  I thought it was a cat.
+      ⌈ what do you think happened⌉?
+?
+ who wants to come to the mosquito Roman?
+ why couldn't he try with the beanstalk?
+ okay.
+ firstname sit down.
+ is his"
+Where did he go yesterday? 	20	greedy	"Where did he go yesterday?  oh.
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's that?
+ what's"
+Where did he go yesterday? 	20	entmax	"Where did he go yesterday?  okay.
+ &=turnspage_back.
+  okay.
+  ⌈what is this⌉?
+  what more can you tell me?
+ mm-hm  &=nodsyes.
+  what is this?
+ mm.
+ mm.
+ okay"
+There is a wug. There are two 	1	default	"There is a wug. There are two  at that.
+.
+ and um Jean is White although of and the magnet in anything anything of roo.
+ does she had an ⌊mm-hm.
+ but when this a remote tune.
+ um quite them's not having just work."
 There is a wug. There are two 	1	greedy	"There is a wug. There are two.
  mm-hm.
  mm-hm.
@@ -275,21 +554,21 @@ There is a wug. There are two 	1	greedy	"There is a wug. There are two.
  mm-hm.
  mm-hm.
  um, it"
-There is a wug. There are two 	1	entmax	"There is a wug. There are two  mm-hm.
+There is a wug. There are two 	1	entmax	"There is a wug. There are two  &=.
+ and he's a good.
+ I think I don't think it's like he's got a good.
+ and he's not.
+ I think he's gonna eat a lot of the water.
  mm-hm.
- um, it's not a little bit of a little bit.
- and um, and, it's a lot of it looks like it.
- and, I know that's not a lot of"
-There is a wug. There are two 	2	default	"There is a wug. There are two  and four for seven four? 
- where's his web? 
- xxx. 
- as he is xxx. 
- Lois was even surprised up with her xxx. 
- right? 
- xxx. 
- well I'm wrong name is . 
- xxx. 
 "
+There is a wug. There are two 	2	default	"There is a wug. There are two  longer things where you got on my name turns?
+ to go what.
+ well who's that?
+ yeah.
+ penguins huh?
+ strange skin in the word.
+ you think it's a picture of carrots?
+                                   ⌊and cage"
 There is a wug. There are two 	2	greedy	"There is a wug. There are two .
  and what's this?
  what's this?
@@ -301,33 +580,37 @@ There is a wug. There are two 	2	greedy	"There is a wug. There are two .
  what's this?
  what's this?
  what's"
-There is a wug. There are two 	2	entmax	"There is a wug. There are two.
+There is a wug. There are two 	2	entmax	"There is a wug. There are two  three years. 
+ I don't think so.
+ and then he can have any more.
+ and he doesn't know how to have to do that. 
+ so he's a good girl but he's just a good one of his favorite thing"
+There is a wug. There are two 	3	default	"There is a wug. There are two  three effately en direction.
+                   ⌈mm-hm.
+ young how many times to get the chcolate devcar authstalk so this face.
  mm-hm.
- and a picture of the same time that they're a lot of it's a little bit more.
- mm-hm.
- and what more can you tell me?
- um, what is this?
- um"
-There is a wug. There are two 	3	default	"There is a wug. There are two  the front.
- also.
- mm-hm.
- and soft no pad were white.
- you know why you can't know much of them because they say they want that.
- mm-hm.
- this is aheh⌋.
- the"
+ the mostes just the            ⌊fker⌋.
+                             "
 There is a wug. There are two 	3	greedy	There is a wug. There are two  three four four four five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five five
-There is a wug. There are two 	3	entmax	"There is a wug. There are two  four five.
- what's this?
- it's a little girl.
- what's this?
- what's that?
- it's a little baby.
- a girl.
- what is that?
- what's this?
- what more can"
-There is a wug. There are two 	4	default	There is a wug. There are two  are to, smallest alarmpen, big, shoot pigs are walking fast and a Brar's skinny way to count to Darthion of power with our throats iv changes are really hungry to come around and swim by yourself and Aust porr thumpey
+There is a wug. There are two 	3	entmax	"There is a wug. There are two  two three four four three six. 
+ six five. 
+ seven four five. 
+ okay. 
+ you wanna get one two two? 
+ three four six. 
+ okay. 
+ oh okay. 
+ okay. 
+ okay. 
+ okay. 
+ I"
+There is a wug. There are two 	4	default	"There is a wug. There are two  three years old we live up hooked day back to but we're getting ready to be taping home.
+ well.
+<|endoftext|>
+oh, what else can you tellbaa?
+ no.
+ it spit up the two stuffings.
+"
 There is a wug. There are two 	4	greedy	"There is a wug. There are two  two three four five five five five five five five five.
  okay.
  what is this?
@@ -337,20 +620,20 @@ There is a wug. There are two 	4	greedy	"There is a wug. There are two  two thre
  mm-hm.
  mm-hm.
  mm"
-There is a wug. There are two 	4	entmax	"There is a wug. There are two  are they a good boy or a little boy or a girl or a boy or a girl.
- okay.
- what more can you tell me?
- okay.
- mm.
- mm-hm.
- okay.
- mm-hm.
-"
-There is a wug. There are two 	5	default	"There is a wug. There are two  ten.
- there are two ⌈h inside⌉  
- two or four⌉.
- one or two four five they're three four four four five five five six that's okayna so it's just good.
- or is it Candying the decoration for"
+There is a wug. There are two 	4	entmax	"There is a wug. There are two .
+ that's a tuu.
+ you can't tell me more about your favorite color.
+ it's not a different kind of a red color.
+ I can't hear it.
+ I can't see it.
+ you can"
+There is a wug. There are two 	5	default	"There is a wug. There are two  berries isn't it?
+ well if it comes out again.
+ with skather pants or toes if it gets an copy.
+ let's say not is there anything else?
+ it's left?
+ thank you Mr Bird.
+ yes?"
 There is a wug. There are two 	5	greedy	"There is a wug. There are two  three.
  mm-hm.
  um, I don't know.
@@ -360,36 +643,38 @@ There is a wug. There are two 	5	greedy	"There is a wug. There are two  three.
  I don't know.
  I don't know.
  I don't know"
-There is a wug. There are two 	5	entmax	"There is a wug. There are two  two four five.
- what more can you tell me?
- oh okay.
+There is a wug. There are two 	5	entmax	"There is a wug. There are two  are those a good place.
+ a big one.
+ and what's that?
+ a little one?
+ a big one.
+ yeah?
+ yeah?
+ and what do you do with that?
+ a big one?
+ and what"
+There is a wug. There are two 	6	default	"There is a wug. There are two  are there any kinds of cakes and a cheese zoos?
+ that's pretty good.
  mm-hm.
- anything else?
+ tell me about them.
+ anything else you can tell me?
+ it's a loaf of paper.
  mm-hm.
- mm-hm.
- mm-hm.
- mm-hm.
- oh.
- mm"
-There is a wug. There are two 	6	default	"There is a wug. There are two  more than one then it has uh three French inches here.
- when you get up persoppone on that thing or like that.
- mm-hm.
- but you can't have that one on there and very, uh I'm well stand"
+"
 There is a wug. There are two 	6	greedy	"There is a wug. There are two  three.
  and a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a"
-There is a wug. There are two 	6	entmax	"There is a wug. There are two  &=laughs.
- I don't know.
- it's a, um, I don't know what this is.
- I don't know.
- it looks like it's got a little red face on it.
- and it's got a"
-There is a wug. There are two 	7	default	"There is a wug. There are two  threeallyolds?
- “ah 0etc 0etc like used 0etc”.
- that looks like a bowl of milk.
- ⌈hm⌉.
- and it's a strawberry goat.
+There is a wug. There are two 	6	entmax	"There is a wug. There are two.
+ they're very very strong.
  mm-hm.
- so, they go in"
+ um, I don't think that's why they're just looking at them.
+ I don't know what that is.
+ and they're kinda like a little bit.
+"
+There is a wug. There are two 	7	default	"There is a wug. There are two  three animals here.
+ baby over there in the glass &=laughs.
+, ⌈what is this⌉?
+ you know utensils I don't know how to knew ofsure loved item.
+ because you know um, got an Niceme and four"
 There is a wug. There are two 	7	greedy	"There is a wug. There are two  two.
  and a little bit more.
  and a little bit more.
@@ -399,36 +684,43 @@ There is a wug. There are two 	7	greedy	"There is a wug. There are two  two.
  I don't know.
  I don't know.
  I"
-There is a wug. There are two 	7	entmax	"There is a wug. There are two  two, two.
- mm-hm.
- and um, they have two, three.
- they're a little, ⌈so⌉.
- um they have two of the other kids and the other ones and they're really good⌉.
-                             ⌊"
-There is a wug. There are two 	8	default	"There is a wug. There are two  these are some in there for you.
- american favorite interest in that middle.
- we're talking about it.
- we're talking about it for a while.
+There is a wug. There are two 	7	entmax	"There is a wug. There are two  are two.
+ and what's this?
+ what more can you tell me?
+ mm.
+ what else can you tell Zorg?
+ he doesn't know much about this one.
+ what is this?
+ what more can you tell me"
+There is a wug. There are two 	8	default	"There is a wug. There are two  chairs.
+ is it picbe to be ready?
+ here's some people.
+ look at this okay?
+ &=pointghious.
+ can you help me roll it with me?
+ can you pet it?
  oh.
- and we're definitely gonna be right back, and so talked about"
+ thank"
 There is a wug. There are two 	8	greedy	"There is a wug. There are two  of them are like a w-d-aid.
  and it's a little bit of a little bit of a little bit of a little bit of a little bit of a.
  mm-hm.
  um, I don't know."
-There is a wug. There are two 	8	entmax	"There is a wug. There are two  two legs and two ears.
+There is a wug. There are two 	8	entmax	"There is a wug. There are two . 
+ there are four and one and one is a t and a and a and a t. 
+ and there's a w. 
+ and there's a r. 
+ there's a h. 
+ and there's a. 
+ and a h"
+There is a wug. There are two 	9	default	"There is a wug. There are two  fear night.
+ past a lake.
  mm-hm.
- and uh he's got two ears and two eyes.
- and he looks like a king.
- and a king.
+ and I I think that's about it.
+ okay great.
+ and what is this?
+ this is Qu attandon six months.
  mm-hm.
- um, and he looks happy.
-"
-There is a wug. There are two 	9	default	"There is a wug. There are two  sparkly jewelry.
- what else can you tell me?
- mm, body tails are on the side.
- mm-hm.
- um we don't usually use  use paint on  with paper so we're not done our own picture.
-"
+ um"
 There is a wug. There are two 	9	greedy	"There is a wug. There are two  three.
  and a half and a half and a half.
  and a half.
@@ -438,22 +730,18 @@ There is a wug. There are two 	9	greedy	"There is a wug. There are two  three.
  and a half half.
  and a half half half.
 "
-There is a wug. There are two 	9	entmax	"There is a wug. There are two  two different colors.
- that's right.
- that's what they do.
+There is a wug. There are two 	9	entmax	"There is a wug. There are two  different colors on them.
+ um, that's about it.
+ okay great.
  and what's this?
- what is this?
- what is it?
+ um this is a female.
+ um, it's got a black and black on it.
+ it's a black white."
+There is a wug. There are two 	10	default	"There is a wug. There are two  dots like a warous colorgfishic.
+ I think sometimes I make good swimmers and do as a room.
+ they use their tusks to dig greattherthic  into dairys of water.
  mm-hm.
- mm-hm.
- what more can you tell me?"
-There is a wug. There are two 	10	default	"There is a wug. There are two  two  these are for a meal muffin.
- oh.
- mm-hm.
- so sometimes they eat ballet.
- mm-hm.
- so I think it actually's sposta be a different stalk of different than I'm sure.
- I"
+ a"
 There is a wug. There are two 	10	greedy	"There is a wug. There are two  three legs.
  and a two legs.
  and a two legs.
@@ -463,9 +751,211 @@ There is a wug. There are two 	10	greedy	"There is a wug. There are two  three l
  and a two legs.
  and a two legs.
  and a two legs"
-There is a wug. There are two 	10	entmax	"There is a wug. There are two  and two legs.
- they're called a yatish.
- they're called a mutetic.
- they're called a yisl.
- and they're called a rile.
- and they're like they're called a"
+There is a wug. There are two 	10	entmax	"There is a wug. There are two  four.
+ what is that?
+ it's an o.
+ it's an x-ray.
+ and, it's an o- I think it's an i- you know?
+ yeah.
+ and what else is on this page"
+There is a wug. There are two 	11	default	"There is a wug. There are two  three doors.
+ there's a number three honey can you open it?
+ oh okay.
+ is it Hug Dillon_teddy_boy?
+ yeah.
+ okay.
+ me.
+ there's a lot of things in here."
+There is a wug. There are two 	11	greedy	"There is a wug. There are two  three.
+ and a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a,"
+There is a wug. There are two 	11	entmax	"There is a wug. There are two  two little pigs.
+ mm-hm.
+ um, they're good to eat.
+ and uh they eat a lot of them.
+ they're good for their trunks.
+ they're good.
+ mm-hm.
+ and uh,"
+There is a wug. There are two 	12	default	"There is a wug. There are two  &=laughs?
+ what more can you tell me?
+ mm.
+ oh I don't think it's an antenna Zorg.
+ &=laughs.
+  what more can you tell me?
+ oh.
+ oh.
+ zorg doesn't know"
+There is a wug. There are two 	12	greedy	"There is a wug. There are two  two.
+ and a two and a two and a two and a two and a two and a two and a two and a two and a two and a two and a two and a two and a two and a two and a two and a"
+There is a wug. There are two 	12	entmax	"There is a wug. There are two  two of them.
+ mm-hm.
+ and they have two big legs.
+ and, ⌈you can tell what they call that⌉.
+ ⌊mm-hm ⌋.
+ and uh, and I think that's what they call it.
+"
+There is a wug. There are two 	13	default	"There is a wug. There are two  and his little eyes are kinda little! 
+ whagister ! 
+ picking up his ears ! 
+ the bird is getting ready for a protecter, smelling, and all for a thcial- hove smelled a headache with a bat"
+There is a wug. There are two 	13	greedy	"There is a wug. There are two  two thousand.
+ and a half of them are like a half of a year old.
+ mm-hm.
+ and, I don't know if they're like a year old.
+ mm-hm.
+ and, I don't know"
+There is a wug. There are two 	13	entmax	"There is a wug. There are two  three of them in a row.
+ oh okay.
+ well what do you think about it?
+ mm-hm.
+ I think you're right.
+ I don't know if you're going to be a big girl or a little boy"
+There is a wug. There are two 	14	default	"There is a wug. There are two  boys.
+ I don't what ⌊ckard⌋.
+ br whaddayak- what is it?
+ I don't know.
+ how do you think that a race car driver is?
+  oops sorry!
+ maybe he's trying to                        "
+There is a wug. There are two 	14	greedy	"There is a wug. There are two  three different colors.
+ and they're all different colors.
+ and they're all different colors.
+ and they're all different colors.
+ and they're all different colors.
+ and they're all different colors.
+ and they're all different"
+There is a wug. There are two 	14	entmax	"There is a wug. There are two  two wkes of the world.
+ so they they can eat a lot of milk.
+ mm.
+ they can have a lot of milk.
+ they can eat all the time.
+ they can drink milk.
+ and then you can have"
+There is a wug. There are two 	15	default	"There is a wug. There are two  at the moon dinosaurs and they have the same size as nineteen nineteenth for the cone.
+ mm.
+ um, and I think that's all I have in my kids love tusks.
+ go ahead and say a little bit more.
+ um"
+There is a wug. There are two 	15	greedy	"There is a wug. There are two  two.
+ and a parrot.
+ and a parrot.
+ and a parrot.
+ and a parrot.
+ and a parrot.
+ and a parrot.
+ and a parrot.
+ and a parrot.
+ and a parrot.
+ and a"
+There is a wug. There are two 	15	entmax	"There is a wug. There are two  three or four legs.
+ uh huh.
+ um.
+ tell me more.
+ um, he's wearing a helmet and a helmet.
+ uh-huh.
+ and uh, looks like a bat.
+ he looks happy.
+ hm"
+There is a wug. There are two 	16	default	"There is a wug. There are two  different colors &=coverlights.
+ hiding over here &=walk!
+ and I wonder if these are any questions &=makesstellys.
+ maybe I'll open those way.
+ oh maybe maybe it was something pretty.
+ let's see."
+There is a wug. There are two 	16	greedy	"There is a wug. There are two  three different colors.
+ and there's a lot of different colors.
+ and there's a lot of different colors.
+ and there's a lot of colors.
+ and there's a lot of colors.
+ and there's a lot of colors"
+There is a wug. There are two 	16	entmax	"There is a wug. There are two  these two.
+ mm-hm.
+ and um, and we've been working on the car before, the car was done.
+ mm-hm.
+ so that was really cool.
+ and that's what we actually did.
+ mm"
+There is a wug. There are two 	17	default	"There is a wug. There are two  eyes here but he can put his black ah hoe with milk on it.
+ mm-hm.
+ an mixan of these things to make the sound you use to make the work this correcton the line.
+ and with those clear nakers"
+There is a wug. There are two 	17	greedy	"There is a wug. There are two  two different kinds of things.
+ mm-hm.
+ and, I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+ I don't know.
+"
+There is a wug. There are two 	17	entmax	"There is a wug. There are two  things that you can do with them?
+ mm-hm.
+ you know I've never been there before.
+ oh.
+ so that's about all I can say about the circus.
+ okay.
+ and what's this?
+ uh"
+There is a wug. There are two 	18	default	"There is a wug. There are two  and a butterfly.
+ um, I'm pretty proud of trying to do that for a long time ago.
+ you just wanna look at this one for a while.
+ oh.
+ um, you can get the something that you see in the"
+There is a wug. There are two 	18	greedy	"There is a wug. There are two  two different colors.
+ what is this?
+ a snake.
+ mm-hm.
+ and, it's got a big beak.
+ mm-hm.
+ and, it's got a big beak.
+ mm-hm.
+ and"
+There is a wug. There are two 	18	entmax	"There is a wug. There are two  of them.
+ what else can you tell me?
+ um, it's an owl.
+ um, he's got some sort of a brown feathers.
+ mm-hm.
+ um, he looks like a young horse.
+ hm."
+There is a wug. There are two 	19	default	"There is a wug. There are two . 
+ and vaning gear on that.
+ there are no rockets but we can't fly like that here.
+ look at that.
+ an s- some siloes keep and oil in our house don't we?
+ ah you know what"
+There is a wug. There are two 	19	greedy	"There is a wug. There are two  four.
+ mm-hm.
+ and it's a very interesting picture.
+ mm-hm.
+ and it's a very interesting picture.
+ mm-hm.
+ and it's a very interesting picture.
+ mm-hm.
+"
+There is a wug. There are two 	19	entmax	"There is a wug. There are two  there's a little nudas on that one.
+ it's like a little one.
+ I think you're right.
+ it looks like a little one.
+ you know what it's called?
+ it's called a cobra.
+"
+There is a wug. There are two 	20	default	"There is a wug. There are two, numbers.
+ now    ⌈do you wanna look at the page⌉?
+ oh I know I think you need a clean light on here huh?
+ okay I think it's really light today.
+ hi I I'm up in the closet and"
+There is a wug. There are two 	20	greedy	"There is a wug. There are two  ones like this.
+ and they're very colorful.
+ and they're very colorful.
+ and they're very colorful.
+ mm-hm.
+ and they're very colorful.
+ mm-hm.
+ and they're very colorful.
+"
+There is a wug. There are two 	20	entmax	"There is a wug. There are two  and two different sizes.
+ mm-hm.
+ I'm assuming it's a girl.
+ she's wearing a smock and a smock and a smock and a smock and a smock and a smock.
+ mm-hm.
+ um, and"

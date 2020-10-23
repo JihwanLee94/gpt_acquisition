@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-
+from config import corpus
 
 def draw_prob_graph(log, text=None, filename=None, title=None):
 
@@ -28,22 +28,47 @@ def draw_prob_graph(log, text=None, filename=None, title=None):
     # .tick_params(axis='x', labelsize=8, labelrotation=90)
     # plt.xtics(tokens)
     # plt.show()
-    plt.savefig('./plot/'+filename+'.png', dpi=300)
+    plt.savefig('./plot/'+corpus+'_'+filename+'.png', dpi=300)
     plt.close()
 
     return
 
 
-def draw_sent_prob(sents, logs, filename=None, title=None):
+def draw_sent_prob(sents, logs, tokens=None, token_prob=None, filename=None, title=None):
 
     fig, ax = plt.subplots()
     epoch_len = len(logs[0])
+    sent_plots = []
     for i,s in enumerate(sents):
-        ax.plot(range(1,epoch_len+1), logs[i], label=s)
+        plot, = ax.plot(range(1,epoch_len+1), logs[i], label=s)
+        sent_plots.append(plot)
+    print(sent_plots)
 
-    ax.legend()
+    # sent_legend = ax.legend(handles=sent_plots, loc='upper left')
+    # plt.gca().add_artist(sent_legend)
     ax.set_xlabel('epoch')
     ax.set_ylabel('sentence probability')
+    sent_legend = ax.legend(handles=sent_plots, loc='upper left', fontsize='x-small')
+    plt.gca().add_artist(sent_legend)
+
+
+    if token_prob is not None:
+        ax2 = ax.twinx()
+        token_plots = []
+        ax2.set_ylabel('token frequency')
+        for i,w in enumerate(tokens):
+            plot, = ax2.plot(range(1, epoch_len+1), [token_prob[i]] * epoch_len, linestyle='dashed', label=w)
+            token_plots.append(plot)
+
+
+    token_legend = ax2.legend(handles=token_plots, loc='upper right', fontsize='x-small')
+    plt.gca().add_artist(token_legend)
+
+
+    fig.tight_layout()
+    plt.title(f'{corpus} - {tokens[0]}')
     plt.savefig(f'./plot/sentence_prob_{filename}.png', dpi=300)
     plt.close()
+    plt.cla()
+    plt.clf()
     return
