@@ -106,7 +106,33 @@ def cal_sent_prob(input_ids, tokenizer, model, sentence, epoch):
             next_token_prob = prediction_scores[input_ids[0][i+1]]
             prob *= next_token_prob
 
-    return prob ** (1/len(input_ids[0]))
+    return prob ** (1/(len(input_ids[0]-1)))
+
+def cal_ques_prob(prompt_ids, sent_ids, model):
+
+    # prob = 1.0
+
+    temp_input_ids = deepcopy(prompt_ids)
+    prediction_scores = model(temp_input_ids)
+    prediction_scores = torch.nn.Softmax()(prediction_scores[0][0][-1])
+    next_token_prob = prediction_scores[sent_ids[0][0]]
+    prob = next_token_prob
+
+    for i, idx in enumerate(sent_ids[0]):
+
+        # print(prompt_ids[0])
+        # print(sent_ids[0][:i+1])
+        temp_input_ids = torch.cat((prompt_ids, sent_ids[0][:i+1].reshape((1,i+1))),1)
+        # temp_input_ids = temp_input_ids.reshape((1,))
+        # print(temp_input_ids)
+        if i < len(sent_ids[0]) - 1 :
+            prediction_scores = model(temp_input_ids)
+            prediction_scores = torch.nn.Softmax()(prediction_scores[0][0][-1])
+            next_token_prob = prediction_scores[sent_ids[0][i+1]]
+            prob *= next_token_prob
+
+    return prob
+
 
 
 

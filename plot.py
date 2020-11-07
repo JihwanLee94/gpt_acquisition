@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from config import corpus
+# from config import corpus
 
 def draw_prob_graph(log, text=None, filename=None, title=None):
 
@@ -49,6 +49,7 @@ def draw_sent_prob(sents, logs, tokens=None, token_prob=None, filename=None, tit
     ax.set_xlabel('epoch')
     ax.set_ylabel('sentence probability')
     sent_legend = ax.legend(handles=sent_plots, loc='upper left', fontsize='x-small')
+    sent_legend.set_zorder(100)
     plt.gca().add_artist(sent_legend)
 
 
@@ -64,9 +65,8 @@ def draw_sent_prob(sents, logs, tokens=None, token_prob=None, filename=None, tit
     token_legend = ax2.legend(handles=token_plots, loc='upper right', fontsize='x-small')
     plt.gca().add_artist(token_legend)
 
-
-    fig.tight_layout()
     plt.title(f'{corpus} - {tokens[0]}')
+    fig.tight_layout()
     plt.savefig(f'./plot/sentence_prob_{filename}.png', dpi=300)
     plt.close()
     plt.cla()

@@ -3,16 +3,17 @@
 from tokenizers import ByteLevelBPETokenizer
 from transformers import GPT2Tokenizer, GPT2Config, GPT2LMHeadModel, TextDataset, DataCollatorForLanguageModeling, TrainingArguments, Trainer, DataCollator
 import json
-from config import vocab_size, seq_len, corpus, corpus_path, max_epoch
+# from config import vocab_size, seq_len, corpus, corpus_path, max_epoch
+from config import Config, random_seeds, corpora
 import os
 import torch
 import numpy as np
 
-torch.manual_seed(777)
-torch.cuda.manual_seed_all(777)
-np.random.seed(777)
+# torch.manual_seed(777)
+# torch.cuda.manual_seed_all(777)
+# np.random.seed(777)
 
-def tokenize(filename):
+def tokenize(filename, vocab_size):
 
     tokenizer = ByteLevelBPETokenizer()
     tokenizer.train(files=filename, vocab_size=vocab_size, min_frequency=2, special_tokens=['<|endoftext|>'])
@@ -30,7 +31,7 @@ def load_gpt_tokenizer(path):
                               # eos_token='<eos>')
     return tokenizer
 
-def load_dataset(path, tokenizer):
+def load_dataset(path, tokenizer, seq_len):
 
     print('loading dataset')
     dataset = TextDataset(
@@ -48,33 +49,35 @@ def load_dataset(path, tokenizer):
 
     return dataset, data_collator
 
-def train(epoch):
+def train(config):
 
-    tokenize(corpus_path)
+    # tokenize(filename=config.corpus_path, vocab_size=config.vocab_size)
 
-    tokenizer = load_gpt_tokenizer(corpus)
+    tokenizer = load_gpt_tokenizer(config.corpus)
     # print(tokenizer.tokenize(' Hi there <|endoftext|>'))
 
 
-    config = GPT2Config(
-        vocab_size=vocab_size,
-        n_positions=seq_len,
-        n_ctx=seq_len,
+    gpt_config = GPT2Config(
+        vocab_size=config.vocab_size,
+        n_positions=config.seq_len,
+        n_ctx=config.seq_len,
     )
 
-    model = GPT2LMHeadModel(config)
+    model = GPT2LMHeadModel(gpt_config)
 
     print(f'{model.num_parameters()} parameters')
 
-    dataset, data_collator = load_dataset(path=corpus_path, tokenizer=tokenizer)
+    dataset, data_collator = load_dataset(path=config.corpus_path, tokenizer=tokenizer, seq_len=config.seq_len)
 
     training_args = TrainingArguments(
-        output_dir=f'./{corpus}/trained/checkpoints_{epoch}',
+        output_dir=f'../../../home_kahlo/jihwan.lee/lang_acquisition/trained/{config.corpus}/{config.random_seed}/checkpoints',
         overwrite_output_dir=True,
-        num_train_epochs=epoch,
+        num_train_epochs=config.max_epoch,
         per_device_train_batch_size=32,
-        save_steps=1575,
-        save_total_limit=epoch,
+        save_steps=config.step,
+        seed=config.random_seed,
+        # max_steps=
+        # save_total_limit=epoch,
     )
     print('training args set')
 
@@ -90,20 +93,34 @@ def train(epoch):
 
     trainer.train()
 
-    trainer.save_model(f"./{corpus}/trained/checkpoints_{epoch}")
-
-
-def main():
-
-    for i in range(max_epoch, max_epoch+1):
-        print(f'{i} epoch training begins...')
-        if not os.path.exists(f'./{corpus}/trained/checkpoints_{i}'):
-            os.system(f'mkdir {corpus}/trained/checkpoints_{i}')
-        train(epoch=i)
+    trainer.save_model(f"../../../home_kahlo/jihwan.lee/lang_acquisition/trained/{config.corpus}/{config.random_seed}")
 
     return
 
+# def sub_main(config):
+#
+#     # for i in range(max_epoch, max_epoch+1):
+#     #     print(f'{i} epoch training begins...')
+#     #     if not os.path.exists(f'./{corpus}/trained/checkpoints_{i}'):
+#     #         os.system(f'mkdir {corpus}/trained/checkpoints_{i}')
+#     # train(config)
+#
+#     return
 
+def set_random_seed(r):
+    torch.manual_seed(r)
+    torch.cuda.manual_seed_all(r)
+    np.random.seed(r)
+    return
+
+def main():
+
+    for r in random_seeds:
+        for c in corpora:
+
+            set_random_seed(r)
+            config = Config(random_seed=r, corpus=c)
+            train(config)
 
 
 if __name__ == '__main__':
