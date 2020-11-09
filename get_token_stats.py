@@ -22,7 +22,6 @@ def prepare_corpus(corpus):
     with open(corpus_path, 'r') as f:
         text = f.read()
 
-
     return text
 
 def count(corpus):
@@ -32,7 +31,6 @@ def count(corpus):
     encoded = tokenizer.tokenize(text)
     counted = Counter(encoded)
     # print(counted)
-
     with open(f'counter_{corpus}.pkl', 'wb') as f:
         pickle.dump(counted, f)
 
@@ -41,14 +39,16 @@ def count(corpus):
 def count_without_tokenizer(corpus):
     text = prepare_corpus(corpus)
     text = text.split()
+    print(f'{corpus}: {len(text)} tokens')
     counted = Counter(text)
 
-    print(counted['goes'])
-    print(sum(counted.values()))
+    # print(counted['goes'])
+    # print(sum(counted.values()))
 
     with open(f'counter_{corpus}_split.pkl', 'wb') as f:
         pickle.dump(counted, f)
 
+    return
 
 def load_counter(corpus):
 
@@ -59,6 +59,7 @@ def load_counter(corpus):
 
 def main():
 
+    print('start main')
     count_without_tokenizer('childes')
     count_without_tokenizer('cbt')
     # count('childes')

@@ -150,13 +150,13 @@ def get_ques_prob(config, key, sentences):
     logs = []
 
     for prompt, s, w in sentences:
-        probs = [key, w, prompt,]
+        probs = [key, w, prompt, s, ]
         for e in range(1, config.max_epoch+1):
             prob = ques_prob(prompt=prompt, sent=s, epoch=e, corpus=config.corpus, random_seed=config.random_seed, step=config.step).data.cpu().numpy().item()
             probs.append(prob)
             print(f'epoch{e} probability: {prob}')
 
-    logs.append(probs)
+        logs.append(probs)
 
     pprint(logs)
 

@@ -57,8 +57,8 @@ Questions_past = deepcopy(Sentences)
 for k in Questions_pres.keys():
     for i, item in enumerate(Questions_pres[k]):
         last = item[0].split()[-1][:-1]
-        Questions_pres[k][i] = [f'Do you {k} {last}? \n Yes I ', item[0][2:], item[1]]
-        Questions_past[k][i] = [f'Did you {k} {last}? \n Yes I ', item[0][2:], item[1]]
+        Questions_pres[k][i] = [f'Do you {k} {last}?\nYes I ', item[0][2:], item[1]]
+        Questions_past[k][i] = [f'Did you {k} {last}?\nYes I ', item[0][2:], item[1]]
 
         # print('item', questions[k][i])
     # print(questions[k])
