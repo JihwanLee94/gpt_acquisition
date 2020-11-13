@@ -25,6 +25,30 @@ def get_average(csvs, start_column=0):
 
     return output
 
+def get_normalize(data, start_column):
+
+
+    return
+
+
+def run_normalize(keys, type, start_column):
+    for c in corpora:
+        data = read_csv(f'./result/average {type} probability {c}.tsv')
+        print(data)
+        print(keys)
+
+    return
+
+
+def save_normalize():
+
+    keys = Sentences.keys
+    run_normalize(keys, "sentence", start_column=3)
+    run_normalize(keys, "question pres", start_column=4)
+    run_normalize(keys, "question past", start_column=4)
+
+    return
+
 def run_average(type, start_column):
 
     for c in corpora:
@@ -53,23 +77,23 @@ def get_token_freq_dict(token_freq):
     return output
 
 
-def draw_sent_prob_submain(keys, data, token_freq, corpus):
+def draw_sent_prob_submain(keys, data, token_freq, corpus, normalize):
 
     for k in keys:
         logs = [r[1:] for i,r in data.iterrows() if r[0]==k]
-        plot_sent_prob(k, logs, token_freq, corpus)
+        plot_sent_prob(k, logs, token_freq, corpus, normalize)
 
     return
 
-def draw_ques_prob_submain(keys, data, token_freq, corpus, type):
+def draw_ques_prob_submain(keys, data, token_freq, corpus, type, normalize):
     for k in keys:
         logs = [r[1:] for i,r in data.iterrows() if r[0]==k]
-        plot_ques_prob(k, logs, token_freq, corpus, type)
+        plot_ques_prob(k, logs, token_freq, corpus, type, normalize)
 
     return
 
 
-def plot_sent_prob(key, logs, token_freq, corpus):
+def plot_sent_prob(key, logs, token_freq, corpus, normalize=False):
 
 
     fig, ax = plt.subplots()
@@ -79,13 +103,18 @@ def plot_sent_prob(key, logs, token_freq, corpus):
 
 
     for i,s in enumerate(logs):
-        # print(s[2:])
-        plot, = ax.plot(range(1, epoch_len+1), s[2:], label=s[2])
+        if normalize:
+            plot, = ax.plot(range(1, epoch_len+1), s[2:]/logs[0][2:], label=s[2])
+        else:
+            plot, = ax.plot(range(1, epoch_len+1), s[2:], label=s[2])
         sent_plots.append(plot)
         # plot2, = ax2.plot(range(1, epoch_len+1), [token_freq[s[1]]] * epoch_len, linestyle='dashed')
 
     ax.set_xlabel('Epoch')
-    ax.set_ylabel('Sentence Generation Probability')
+    if normalize:
+        ax.set_ylabel('Relative Sentence Generation Probability')
+    else:
+        ax.set_ylabel('Sentence Generation Probability')
     # sent_legend = ax.legend(handles=sent_plots, loc='upper left', fontsize='x-small')
     # plt.gca().add_artist(sent_legend)
 
@@ -108,15 +137,21 @@ def plot_sent_prob(key, logs, token_freq, corpus):
     plt.title(f'{corpus} - {key}')
 
     fig.tight_layout()
-    plt.savefig(f'./result/plot/sentence_prob_{corpus}_{key}.png', dpi=300)
-    print(f'saved as ./result/plot/sentence_prob_{corpus}_{key}.png')
+
+    if normalize:
+        plt.savefig(f'./result/plot/norm_sentence_prob_{corpus}_{key}.png', dpi=300)
+        print(f'saved as ./result/plot/norm_sentence_prob_{corpus}_{key}.png')
+    else:
+        plt.savefig(f'./result/plot/sentence_prob_{corpus}_{key}.png', dpi=300)
+        print(f'saved as ./result/plot/sentence_prob_{corpus}_{key}.png')
+
     plt.close()
     plt.cla()
     plt.clf()
 
     return
 
-def plot_ques_prob(key, logs, token_freq, corpus, type):
+def plot_ques_prob(key, logs, token_freq, corpus, type, normalize=False):
 
 
     fig, ax = plt.subplots()
@@ -126,15 +161,18 @@ def plot_ques_prob(key, logs, token_freq, corpus, type):
 
 
     for i,s in enumerate(logs):
-        # print(s[2:])
-        plot, = ax.plot(range(1, epoch_len+1), s[3:], label=s[3])
+        if normalize:
+            plot, = ax.plot(range(1, epoch_len+1), s[3:]/logs[0][3:], label=s[3])
+        else:
+            plot, = ax.plot(range(1, epoch_len+1), s[3:], label=s[3])
         sent_plots.append(plot)
         # plot2, = ax2.plot(range(1, epoch_len+1), [token_freq[s[1]]] * epoch_len, linestyle='dashed')
 
     ax.set_xlabel('Epoch')
-    ax.set_ylabel('Sentence Generation Probability')
-    # sent_legend = ax.legend(handles=sent_plots, loc='upper left', fontsize='x-small')
-    # plt.gca().add_artist(sent_legend)
+    if normalize:
+        ax.set_ylabel('Relative Sentence Generation Probability')
+    else:
+        ax.set_ylabel('Sentence Generation Probability')
 
     ax2 = ax.twinx()
     token_plots = []
@@ -155,8 +193,12 @@ def plot_ques_prob(key, logs, token_freq, corpus, type):
     plt.title(f'{type.upper()} - {corpus} - {key}')
 
     fig.tight_layout()
-    plt.savefig(f'./result/plot/ques_{type}_prob_{corpus}_{key}.png', dpi=300)
-    print(f'saved as ./result/plot/ques_{type}_prob_{corpus}_{key}.png')
+    if normalize:
+        plt.savefig(f'./result/plot/norm_ques_{type}_prob_{corpus}_{key}.png', dpi=300)
+        print(f'saved as ./result/plot/norm_ques_{type}_prob_{corpus}_{key}.png')
+    else:
+        plt.savefig(f'./result/plot/ques_{type}_prob_{corpus}_{key}.png', dpi=300)
+        print(f'saved as ./result/plot/ques_{type}_prob_{corpus}_{key}.png')
     plt.close()
     plt.cla()
     plt.clf()
@@ -173,7 +215,9 @@ def draw_sent_prob_main():
         token_freq_data = pd.read_csv(f'./result/token frequency {c}.tsv', sep='\t', header=None)
         token_freq_data = get_token_freq_dict(token_freq_data)
         data = pd.read_csv(f'./result/average sentence probability {c}.tsv', sep='\t', header=None)
-        draw_sent_prob_submain(keys, data, token_freq_data, c)
+        draw_sent_prob_submain(keys, data, token_freq_data, c, normalize=False)
+        draw_sent_prob_submain(keys, data, token_freq_data, c, normalize=True)
+
 
 
     return
@@ -188,7 +232,8 @@ def draw_ques_prob_main():
         token_freq_data = get_token_freq_dict(token_freq_data)
         for t in ['pres', 'past']:
             data = pd.read_csv(f'./result/average question {t} probability {c}.tsv', sep='\t', header=None)
-            draw_ques_prob_submain(keys, data, token_freq_data, c, type=t)
+            draw_ques_prob_submain(keys, data, token_freq_data, c, type=t, normalize=False)
+            draw_ques_prob_submain(keys, data, token_freq_data, c, type=t, normalize=True)
 
     return
 
@@ -245,10 +290,10 @@ def draw_hypothe_graph_main(epoch=20):
 
 
 def main():
-
-    save_average()
-    # draw_hypothe_graph_main(epoch=200)
-    # draw_sent_prob_main()
+    # save_normalize()
+    # save_average()
+    draw_hypothe_graph_main(epoch=200)
+    draw_sent_prob_main()
     draw_ques_prob_main()
 
     return
